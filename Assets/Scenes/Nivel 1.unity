@@ -775,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 425139513}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23, y: 0.02, z: -5.05}
+  m_LocalPosition: {x: -23, y: 0, z: -5.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 517940930}
   - component: {fileID: 517940929}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Ataq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,7 +1024,7 @@ RectTransform:
   m_GameObject: {fileID: 517940927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3182725, y: 6.0662975, z: 1.7954}
+  m_LocalScale: {x: 1.854282, y: 4.4797482, z: 2.5254097}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1124716722}
@@ -1032,7 +1032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 793, y: -255}
+  m_AnchoredPosition: {x: 739, y: -301}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517940929
@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 524120761}
   - component: {fileID: 524120760}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1146,7 +1146,7 @@ RectTransform:
   m_GameObject: {fileID: 524120758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3182725, y: 6.0662975, z: 1.7954}
+  m_LocalScale: {x: 1.4797531, y: 3.0096722, z: 0.8907518}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1953591845}
@@ -1154,7 +1154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -402, y: -255}
+  m_AnchoredPosition: {x: -391.12, y: -309}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &524120760
@@ -2830,7 +2830,7 @@ GameObject:
   - component: {fileID: 1974567841}
   - component: {fileID: 1974567840}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2845,7 +2845,7 @@ RectTransform:
   m_GameObject: {fileID: 1974567838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5020397, y: 6.0662975, z: 1.7954}
+  m_LocalScale: {x: 1.6860306, y: 3.0096722, z: 0.8907518}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 305968569}
@@ -2853,7 +2853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -754, y: -255}
+  m_AnchoredPosition: {x: -664, y: -309}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974567840
@@ -3032,7 +3032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8848c0a090e4ea40a71c744fcb8e44c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 30
+  _timer: 5
   txtTimer: {fileID: 305713656}
 --- !u!1 &2121417855
 GameObject:

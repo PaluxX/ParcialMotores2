@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEditor.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float timer;
+    [SerializeField] private float _timer;
 
     public TextMeshProUGUI txtTimer;
 
     private void Update()
     {
-        timer -= Time.deltaTime;
+        _timer -= Time.deltaTime;
 
-        txtTimer.text = "" + timer.ToString("f0");
-
+        txtTimer.text = "" + _timer.ToString("f0");
+        if (_timer <= 0)
+        {
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
+    
 }
