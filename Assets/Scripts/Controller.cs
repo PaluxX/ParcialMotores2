@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Controller : MonoBehaviour
 {
     protected Vector3 _moveDir;
+    public bool lookingLeft;
     public abstract Vector3 GetMovementInput();
 
 

@@ -4,22 +4,31 @@ using UnityEngine;
 
 public class ButtonController : Controller
 {
+
+    [SerializeField] Weapon _weapon;
+    
+    
     public override Vector3 GetMovementInput()
     {
         return _moveDir;
     }
 
 
+
+
     public void MoveRight()
     {
 
         _moveDir = Vector3.right;
+        lookingLeft = false;
     
     }
     public void MoveLeft() 
     {
         
         _moveDir = Vector3.left;
+        lookingLeft = true;
+        
 
     }
 
@@ -30,4 +39,8 @@ public class ButtonController : Controller
             
     }
 
+    public void Shoot() 
+    {
+        _weapon.Shoot();
+    }
 }
