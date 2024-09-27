@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 425139519}
   - component: {fileID: 425139518}
   - component: {fileID: 425139520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -838,7 +838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d248c58d1ed2174458ceb84674207ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 100
+  life: 100
+  _bullet: {fileID: 5795454553976956997, guid: f26e7bf7a67076a4aa05d758108e118a, type: 3}
 --- !u!1 &433955665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1328,7 @@ GameObject:
   - component: {fileID: 593411840}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1447,7 +1448,7 @@ GameObject:
   - component: {fileID: 971919409}
   - component: {fileID: 971919408}
   - component: {fileID: 971919407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piso
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -29,4 +29,6 @@ public class EnemyMov : MonoBehaviour
         _rb.MovePosition(_rb.position + _movement * _speed * Time.deltaTime);
 
     }
+
+
 }

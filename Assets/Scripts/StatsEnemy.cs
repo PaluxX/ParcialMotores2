@@ -5,19 +5,50 @@ using UnityEngine;
 
 public class StatsEnemy : MonoBehaviour
 {
-    [SerializeField] private float _life = 100f;
-  
-
-    public void TakeDmg(float damage = 20)
-    {
-      _life -= damage;
-    }
-
+    public float life = 100f;
+    public Bullet _bullet;
     private void Update()
     {
-        if (_life <= 0)
+        
+        
+       die();
+
+    }
+
+
+
+    public void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.layer == 9)
+        {
+            
+            TakeDamage();
+         
+
+        }
+    }
+
+
+    void TakeDamage()
+    {
+        life -= _bullet._damage;
+    }
+
+    void die()
+    {
+        if (life <= 0)
         {
             Destroy(gameObject);
         }
     }
+
 }
+    
+  
+
+   
+
+    
+
+
+

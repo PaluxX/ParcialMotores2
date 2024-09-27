@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class NormalBullet : Bullet
 {
-    [SerializeField] private float _damage;
-    public StatsEnemy Enemy;
+    
+    //public StatsEnemy Enemy;
 
     void Update()
     {
         transform.position += transform.right * _speed * Time.deltaTime;   
     }
 
-    public void OnCollisionEnter(Collision collision)
+    /* public void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Enemy"))
         {
@@ -22,7 +22,7 @@ public class NormalBullet : Bullet
             Destroy(gameObject);
 
         }
-    }
+    }*/
 
 
 
