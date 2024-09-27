@@ -7,11 +7,17 @@ public class StatsEnemy : MonoBehaviour
 {
     public float life = 100f;
     public Bullet _bullet;
+
+    public Renderer enemigoRenderer;
+
+    
     private void Update()
     {
-        
-        
-       die();
+
+
+
+        colorChange();
+        die();
 
     }
 
@@ -34,6 +40,23 @@ public class StatsEnemy : MonoBehaviour
         life -= _bullet._damage;
     }
 
+    
+    void colorChange()
+    {
+        
+        
+        if (life <= 50)
+        {
+            enemigoRenderer.material.color = Color.yellow;
+
+            if (life <= 30)
+            {
+                enemigoRenderer.material.color = Color.red;
+            }
+        }
+
+       
+    }
     void die()
     {
         if (life <= 0)
